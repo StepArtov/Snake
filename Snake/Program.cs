@@ -14,8 +14,12 @@ namespace Snake
             p1.Draw();
 
             Point p2 = new Point(4, 4, '*');
-
             p2.Draw();
+
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(2);
+            numList.Add(5);
 
             Console.ReadLine();
         }
