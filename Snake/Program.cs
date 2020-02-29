@@ -10,23 +10,21 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
-            Console.WriteLine("Hello World");
-=======
-            int x1 = 3;
-            int y1 = 3;
-            char sym1 = '*';
+            Point p1 = new Point();
+            p1.x = 5;
+            p1.y = 3;
+            p1.sym = '*';
+            p1.Draw();
 
-            Draw(x1, y1, sym1); //dsfsd
+            Point p2 = new Point();
+            p2.x = 15;
+            p2.y = 3;
+            p2.sym = '?';
+            p2.Draw();
 
-            int x2 = 10;
-            int y2 = 10;
-            char sym2 = '#';
-
-            Draw(x2, y2, sym2);
-
->>>>>>> Stashed changes
             Console.ReadLine();
         }
+
+
     }
 }
