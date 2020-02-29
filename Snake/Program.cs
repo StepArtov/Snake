@@ -9,7 +9,7 @@ namespace Snake
 {
     class Program
     {
-        static void Main(string[] args)dsfsdfsdfsdf
+        static void Main(string[] args)
         {
 
             //Console.SetBufferSize(80, 30);
