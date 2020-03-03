@@ -21,6 +21,7 @@ namespace Snake
             }
         }
 
+
         internal void Move()
         {
             Point tail = pList.First();
@@ -38,6 +39,17 @@ namespace Snake
             Point nextPoint = new Point(head);
             nextPoint.Move(1, direction);
             return nextPoint;
+        }
+        public void HandleKey(ConsoleKeyInfo key)
+        {
+            if (key.Key == ConsoleKey.LeftArrow)
+                direction = Direction.LEFT;
+            else if (key.Key == ConsoleKey.RightArrow)
+                direction = Direction.RIGHT;
+            else if (key.Key == ConsoleKey.UpArrow)
+                direction = Direction.UP;
+            else if (key.Key == ConsoleKey.DownArrow)
+                direction = Direction.DOWN;
         }
     }
 }
